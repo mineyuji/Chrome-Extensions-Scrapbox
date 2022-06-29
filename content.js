@@ -1,7 +1,3 @@
-let url = ''
-chrome.storage.sync.get(["hookurl"], res => {
-  url = res.hookurl
-})
 let sbProjectName = ''
 chrome.storage.sync.get(["sbProjectName"], res => {
   sbProjectName = res.sbProjectName || ''

@@ -1,8 +1,8 @@
 {
-  "name": "Scrapbox page send to Slack (beta)",
-  "version": "0.0.1",
+  "name": "Retrieve recently created Scrapbox pages (beta)",
+  "version": "0.2.1",
   "manifest_version": 3,
-  "description": "Retrieve the Scrapbox page you created and send it to Slack via Lambda.",
+  "description": "Retrieve the Scrapbox page you created.",
   "icons": {
     "16": "scrapbox-icon-144.png",
     "32": "scrapbox-icon-144.png",
@@ -10,7 +10,7 @@
     "128": "scrapbox-icon-144.png"
   },
   "options_page": "options.html",
-  "permissions": ["storage", "activeTab", "scripting", "declarativeContent"],
+  "permissions": ["storage", "activeTab"],
   "action": {
     "page_action": {
       "default_icon": {
@@ -18,9 +18,8 @@
         "24": "scrapbox-icon-144.png",
         "32": "scrapbox-icon-144.png"
       }
-    }
-  },
-  "background": {
-    "service_worker": "background.js"
+    },
+    "default_title":"popup",
+    "default_popup":"popup.html"
   }
 }

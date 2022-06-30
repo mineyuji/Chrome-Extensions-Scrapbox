@@ -1,5 +1,5 @@
 {
-  "name": "Retrieve recently created Scrapbox pages (beta)",
+  "name": "My created Scrapbox pages (beta)",
   "version": "0.2.1",
   "manifest_version": 3,
   "description": "Retrieve the Scrapbox page you created.",
